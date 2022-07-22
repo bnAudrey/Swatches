@@ -14,6 +14,8 @@
 		14ACE3BD288AD8BA000CBBA5 /* Swatches.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3BB288AD8BA000CBBA5 /* Swatches.xcdatamodeld */; };
 		14ACE3BF288AD8BB000CBBA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ACE3BE288AD8BB000CBBA5 /* Assets.xcassets */; };
 		14ACE3C2288AD8BB000CBBA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14ACE3C0288AD8BB000CBBA5 /* LaunchScreen.storyboard */; };
+		14ACE3CB288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3C9288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.swift */; };
+		14ACE3CC288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14ACE3CA288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		14ACE3BE288AD8BB000CBBA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14ACE3C1288AD8BB000CBBA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14ACE3C3288AD8BB000CBBA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14ACE3C9288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwatchCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		14ACE3CA288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwatchCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				14ACE3B4288AD8BA000CBBA5 /* SceneDelegate.swift */,
 				14ACE3B6288AD8BA000CBBA5 /* ViewController.swift */,
 				14ACE3B8288AD8BA000CBBA5 /* Main.storyboard */,
+				14ACE3C9288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.swift */,
+				14ACE3CA288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.xib */,
 				14ACE3BE288AD8BB000CBBA5 /* Assets.xcassets */,
 				14ACE3C0288AD8BB000CBBA5 /* LaunchScreen.storyboard */,
 				14ACE3C3288AD8BB000CBBA5 /* Info.plist */,
@@ -128,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14ACE3CC288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.xib in Resources */,
 				14ACE3C2288AD8BB000CBBA5 /* LaunchScreen.storyboard in Resources */,
 				14ACE3BF288AD8BB000CBBA5 /* Assets.xcassets in Resources */,
 				14ACE3BA288AD8BA000CBBA5 /* Main.storyboard in Resources */,
@@ -143,6 +150,7 @@
 			files = (
 				14ACE3B7288AD8BA000CBBA5 /* ViewController.swift in Sources */,
 				14ACE3B3288AD8BA000CBBA5 /* AppDelegate.swift in Sources */,
+				14ACE3CB288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.swift in Sources */,
 				14ACE3B5288AD8BA000CBBA5 /* SceneDelegate.swift in Sources */,
 				14ACE3BD288AD8BA000CBBA5 /* Swatches.xcdatamodeld in Sources */,
 			);
