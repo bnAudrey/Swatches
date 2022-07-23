@@ -47,11 +47,10 @@
                             <constraint firstItem="kS8-xb-haY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j15-8N-CFI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Swatches" id="dPp-AQ-hWv">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="Y4i-lG-dba">
-                            <color key="tintColor" red="0.90196078431372551" green="0.44313725490196076" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Swatches" id="dPp-AQ-hWv"/>
+                    <connections>
+                        <segue destination="QJp-57-zqx" kind="show" identifier="toBaseColorSegue" id="V9h-bL-6XC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,8 +75,74 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
+        <!--Base Color-->
+        <scene sceneID="xON-tu-jOP">
+            <objects>
+                <viewController id="QJp-57-zqx" customClass="ViewController" customModule="Swatches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3SP-RT-1aa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dcH-ha-GcM">
+                                <rect key="frame" x="0.0" y="140" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KG5-Fe-Dd6">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <tableView key="backgroundView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6iC-iZ-oFl">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </tableView>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vP5-4q-xVD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vP5-4q-xVD" firstAttribute="trailing" secondItem="dcH-ha-GcM" secondAttribute="trailing" id="6f1-Fb-gyp"/>
+                            <constraint firstItem="dcH-ha-GcM" firstAttribute="leading" secondItem="vP5-4q-xVD" secondAttribute="leading" id="Mhc-s2-7c2"/>
+                            <constraint firstItem="dcH-ha-GcM" firstAttribute="top" secondItem="vP5-4q-xVD" secondAttribute="top" id="bQ4-DT-hD2"/>
+                            <constraint firstItem="vP5-4q-xVD" firstAttribute="bottom" secondItem="dcH-ha-GcM" secondAttribute="bottom" id="gSK-Vk-hU1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Base Color" id="nTC-CO-2YP"/>
+                    <connections>
+                        <segue destination="qE5-Bj-Oxv" kind="show" id="cgd-so-9zM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1S-rz-rln" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795" y="83"/>
+        </scene>
+        <!--Color Combination-->
+        <scene sceneID="knY-9M-vqM">
+            <objects>
+                <viewController id="qE5-Bj-Oxv" customClass="ViewController" customModule="Swatches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="shH-6g-hSa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ejd-2X-v0e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Color Combination" id="vQ4-VI-obx" customClass="toColorCombinationSegue">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="yfT-r9-lvW"/>
+                            <barButtonItem title="Item" image="arrow.clockwise" catalog="system" id="7C3-k7-sk4"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jh8-IA-w9E" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2549" y="82"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
