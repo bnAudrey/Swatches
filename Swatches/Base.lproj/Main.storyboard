@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -121,12 +122,64 @@
         <!--Color Combination-->
         <scene sceneID="knY-9M-vqM">
             <objects>
-                <viewController id="qE5-Bj-Oxv" customClass="ViewController" customModule="Swatches" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qE5-Bj-Oxv" customClass="TestViewController" customModule="Swatches" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="shH-6g-hSa">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWQ-m1-Kid">
+                                <rect key="frame" x="20" y="160" width="350" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bP-xE-k3e">
+                                        <rect key="frame" x="10" y="10" width="82" height="85"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedgewood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mET-ua-3mY">
+                                        <rect key="frame" x="102" y="10" width="99" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" name="Dark Blue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#47809A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRt-zF-F1T">
+                                        <rect key="frame" x="102" y="41" width="57" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" name="Orange Jamet"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Adventurous " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWW-0R-xjw">
+                                        <rect key="frame" x="102" y="75" width="84" height="20"/>
+                                        <color key="backgroundColor" red="0.13725490200000001" green="0.17254901959999999" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="K8w-A4-bUN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Light Blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1bP-xE-k3e" secondAttribute="bottom" constant="10" id="1PK-zb-1J1"/>
+                                    <constraint firstItem="dRt-zF-F1T" firstAttribute="top" secondItem="mET-ua-3mY" secondAttribute="bottom" constant="10" id="2c2-Wt-QTK"/>
+                                    <constraint firstItem="dRt-zF-F1T" firstAttribute="leading" secondItem="1bP-xE-k3e" secondAttribute="trailing" constant="10" id="93G-nt-fZZ"/>
+                                    <constraint firstItem="1bP-xE-k3e" firstAttribute="top" secondItem="ZWQ-m1-Kid" secondAttribute="top" constant="10" id="A33-dL-qfx"/>
+                                    <constraint firstItem="1bP-xE-k3e" firstAttribute="leading" secondItem="ZWQ-m1-Kid" secondAttribute="leading" constant="10" id="Ete-kn-Jpg"/>
+                                    <constraint firstAttribute="trailing" secondItem="1bP-xE-k3e" secondAttribute="trailing" constant="258" id="KbF-2l-W48"/>
+                                    <constraint firstItem="mET-ua-3mY" firstAttribute="top" secondItem="ZWQ-m1-Kid" secondAttribute="top" constant="10" id="Wob-zI-CqI"/>
+                                    <constraint firstAttribute="bottom" secondItem="gWW-0R-xjw" secondAttribute="bottom" constant="10" id="iyQ-dm-H46"/>
+                                    <constraint firstAttribute="height" constant="105" id="ke2-ht-95u"/>
+                                    <constraint firstItem="gWW-0R-xjw" firstAttribute="leading" secondItem="1bP-xE-k3e" secondAttribute="trailing" constant="10" id="mdd-Ki-3w5"/>
+                                    <constraint firstItem="mET-ua-3mY" firstAttribute="leading" secondItem="1bP-xE-k3e" secondAttribute="trailing" constant="10" id="xgF-sR-8Bv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ejd-2X-v0e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZWQ-m1-Kid" firstAttribute="leading" secondItem="ejd-2X-v0e" secondAttribute="leading" constant="20" id="BME-NY-Nmx"/>
+                            <constraint firstItem="ejd-2X-v0e" firstAttribute="trailing" secondItem="ZWQ-m1-Kid" secondAttribute="trailing" constant="20" id="Eo4-a7-2pq"/>
+                            <constraint firstItem="ZWQ-m1-Kid" firstAttribute="top" secondItem="ejd-2X-v0e" secondAttribute="top" constant="20" id="muj-oo-B3I"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Color Combination" id="vQ4-VI-obx" customClass="toColorCombinationSegue">
                         <rightBarButtonItems>
@@ -134,15 +187,27 @@
                             <barButtonItem title="Item" image="arrow.clockwise" catalog="system" id="7C3-k7-sk4"/>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="label" destination="gWW-0R-xjw" id="oI6-c5-Qe9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jh8-IA-w9E" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2549" y="82"/>
+            <point key="canvasLocation" x="2547.6923076923076" y="81.753554502369667"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <namedColor name="Dark Blue">
+            <color red="0.13725490196078433" green="0.17254901960784313" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light Blue">
+            <color red="0.92941176470588238" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Orange Jamet">
+            <color red="0.90196078431372551" green="0.44313725490196076" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -50,8 +50,6 @@
 		14ACE3A6288AD8BA000CBBA5 = {
 			isa = PBXGroup;
 			children = (
-				144BAF87288BF54600D6FEDB /* BaseColorTableViewCell.swift */,
-				144BAF88288BF54600D6FEDB /* BaseColorTableViewCell.xib */,
 				14ACE3B1288AD8BA000CBBA5 /* Swatches */,
 				14ACE3B0288AD8BA000CBBA5 /* Products */,
 			);
@@ -68,6 +66,8 @@
 		14ACE3B1288AD8BA000CBBA5 /* Swatches */ = {
 			isa = PBXGroup;
 			children = (
+				144BAF87288BF54600D6FEDB /* BaseColorTableViewCell.swift */,
+				144BAF88288BF54600D6FEDB /* BaseColorTableViewCell.xib */,
 				14ACE3B2288AD8BA000CBBA5 /* AppDelegate.swift */,
 				14ACE3B4288AD8BA000CBBA5 /* SceneDelegate.swift */,
 				14ACE3B6288AD8BA000CBBA5 /* ViewController.swift */,
