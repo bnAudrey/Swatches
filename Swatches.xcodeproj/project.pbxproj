@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		144BAF89288BF54600D6FEDB /* BaseColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BAF87288BF54600D6FEDB /* BaseColorTableViewCell.swift */; };
 		144BAF8A288BF54600D6FEDB /* BaseColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144BAF88288BF54600D6FEDB /* BaseColorTableViewCell.xib */; };
+		144BAF8F288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BAF8D288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift */; };
+		144BAF90288EDF9500D6FEDB /* ColorCombinationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144BAF8E288EDF9500D6FEDB /* ColorCombinationTableViewCell.xib */; };
+		144BAF94288EE0E000D6FEDB /* ColorSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BAF92288EE0E000D6FEDB /* ColorSeeder.swift */; };
+		144BAF95288EE0E000D6FEDB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BAF93288EE0E000D6FEDB /* Color.swift */; };
 		14ACE3B3288AD8BA000CBBA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3B2288AD8BA000CBBA5 /* AppDelegate.swift */; };
 		14ACE3B5288AD8BA000CBBA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3B4288AD8BA000CBBA5 /* SceneDelegate.swift */; };
 		14ACE3B7288AD8BA000CBBA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3B6288AD8BA000CBBA5 /* ViewController.swift */; };
@@ -23,6 +27,10 @@
 /* Begin PBXFileReference section */
 		144BAF87288BF54600D6FEDB /* BaseColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseColorTableViewCell.swift; sourceTree = "<group>"; };
 		144BAF88288BF54600D6FEDB /* BaseColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseColorTableViewCell.xib; sourceTree = "<group>"; };
+		144BAF8D288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCombinationTableViewCell.swift; sourceTree = "<group>"; };
+		144BAF8E288EDF9500D6FEDB /* ColorCombinationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCombinationTableViewCell.xib; sourceTree = "<group>"; };
+		144BAF92288EE0E000D6FEDB /* ColorSeeder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSeeder.swift; sourceTree = "<group>"; };
+		144BAF93288EE0E000D6FEDB /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		14ACE3AF288AD8BA000CBBA5 /* Swatches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swatches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14ACE3B2288AD8BA000CBBA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14ACE3B4288AD8BA000CBBA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144BAF91288EE0C900D6FEDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				144BAF93288EE0E000D6FEDB /* Color.swift */,
+				144BAF92288EE0E000D6FEDB /* ColorSeeder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		14ACE3A6288AD8BA000CBBA5 = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +83,11 @@
 		14ACE3B1288AD8BA000CBBA5 /* Swatches */ = {
 			isa = PBXGroup;
 			children = (
+				144BAF91288EE0C900D6FEDB /* Model */,
 				144BAF87288BF54600D6FEDB /* BaseColorTableViewCell.swift */,
 				144BAF88288BF54600D6FEDB /* BaseColorTableViewCell.xib */,
+				144BAF8D288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift */,
+				144BAF8E288EDF9500D6FEDB /* ColorCombinationTableViewCell.xib */,
 				14ACE3B2288AD8BA000CBBA5 /* AppDelegate.swift */,
 				14ACE3B4288AD8BA000CBBA5 /* SceneDelegate.swift */,
 				14ACE3B6288AD8BA000CBBA5 /* ViewController.swift */,
@@ -141,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14ACE3CC288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.xib in Resources */,
+				144BAF90288EDF9500D6FEDB /* ColorCombinationTableViewCell.xib in Resources */,
 				14ACE3C2288AD8BB000CBBA5 /* LaunchScreen.storyboard in Resources */,
 				14ACE3BF288AD8BB000CBBA5 /* Assets.xcassets in Resources */,
 				14ACE3BA288AD8BA000CBBA5 /* Main.storyboard in Resources */,
@@ -158,9 +179,12 @@
 				144BAF89288BF54600D6FEDB /* BaseColorTableViewCell.swift in Sources */,
 				14ACE3B7288AD8BA000CBBA5 /* ViewController.swift in Sources */,
 				14ACE3B3288AD8BA000CBBA5 /* AppDelegate.swift in Sources */,
+				144BAF94288EE0E000D6FEDB /* ColorSeeder.swift in Sources */,
+				144BAF8F288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift in Sources */,
 				14ACE3CB288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.swift in Sources */,
 				14ACE3B5288AD8BA000CBBA5 /* SceneDelegate.swift in Sources */,
 				14ACE3BD288AD8BA000CBBA5 /* Swatches.xcdatamodeld in Sources */,
+				144BAF95288EE0E000D6FEDB /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

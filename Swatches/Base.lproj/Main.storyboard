@@ -65,6 +65,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="0Jz-ha-1p3">
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.90196078430000004" green="0.4431372549" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="Dark Blue"/>
+                        </textAttributes>
                         <navigationBarAppearance key="compactScrollEdgeAppearance"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -128,26 +132,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWQ-m1-Kid">
-                                <rect key="frame" x="20" y="160" width="350" height="105"/>
+                                <rect key="frame" x="20" y="165" width="350" height="105"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bP-xE-k3e">
                                         <rect key="frame" x="10" y="10" width="82" height="85"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.2784313725" green="0.50196078430000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedgewood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mET-ua-3mY">
-                                        <rect key="frame" x="102" y="10" width="99" height="21"/>
+                                        <rect key="frame" x="102" y="9.9999999999999982" width="99" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" name="Dark Blue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#47809A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRt-zF-F1T">
-                                        <rect key="frame" x="102" y="41" width="57" height="16"/>
+                                        <rect key="frame" x="102.00000000000001" y="40.333333333333343" width="56.666666666666671" height="15.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" name="Orange Jamet"/>
+                                        <color key="textColor" name="Dark Blue 70%"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Adventurous " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWW-0R-xjw">
-                                        <rect key="frame" x="102" y="75" width="84" height="20"/>
+                                        <rect key="frame" x="102" y="75" width="83.666666666666686" height="20"/>
                                         <color key="backgroundColor" red="0.13725490200000001" green="0.17254901959999999" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="K8w-A4-bUN"/>
@@ -172,19 +176,72 @@
                                     <constraint firstItem="mET-ua-3mY" firstAttribute="leading" secondItem="1bP-xE-k3e" secondAttribute="trailing" constant="10" id="xgF-sR-8Bv"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-Xe-V0R">
+                                <rect key="frame" x="20" y="295" width="345" height="95"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gOm-RP-f79">
+                                        <rect key="frame" x="10" y="15" width="325" height="65"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdF-V9-mkd">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.2784313725" green="0.50196078430000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYG-p5-9HB">
+                                                <rect key="frame" x="65" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.15686274509803921" green="0.61960784313725492" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUp-yO-PxZ">
+                                                <rect key="frame" x="130" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.73333333333333328" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6f-j7-Zpq">
+                                                <rect key="frame" x="195" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.66274509803921566" green="0.91764705882352937" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqb-8u-fJy">
+                                                <rect key="frame" x="260" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.97254901960784312" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Light Gray"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gOm-RP-f79" secondAttribute="trailing" constant="10" id="7DK-2Y-uEP"/>
+                                    <constraint firstItem="gOm-RP-f79" firstAttribute="leading" secondItem="xDz-Xe-V0R" secondAttribute="leading" constant="10" id="Hgg-EY-rDN"/>
+                                    <constraint firstAttribute="bottom" secondItem="gOm-RP-f79" secondAttribute="bottom" constant="15" id="YPz-sl-ojD"/>
+                                    <constraint firstAttribute="height" constant="95" id="hVm-bK-UEa"/>
+                                    <constraint firstItem="gOm-RP-f79" firstAttribute="top" secondItem="xDz-Xe-V0R" secondAttribute="top" constant="15" id="ri7-23-Km0"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y73-vw-rLg">
+                                <rect key="frame" x="20" y="415" width="345" height="395"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ejd-2X-v0e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZWQ-m1-Kid" firstAttribute="leading" secondItem="ejd-2X-v0e" secondAttribute="leading" constant="20" id="BME-NY-Nmx"/>
+                            <constraint firstItem="y73-vw-rLg" firstAttribute="top" secondItem="xDz-Xe-V0R" secondAttribute="bottom" constant="25" id="CLA-OK-aI7"/>
+                            <constraint firstItem="y73-vw-rLg" firstAttribute="leading" secondItem="xDz-Xe-V0R" secondAttribute="leading" id="CXA-X7-BcX"/>
                             <constraint firstItem="ejd-2X-v0e" firstAttribute="trailing" secondItem="ZWQ-m1-Kid" secondAttribute="trailing" constant="20" id="Eo4-a7-2pq"/>
-                            <constraint firstItem="ZWQ-m1-Kid" firstAttribute="top" secondItem="ejd-2X-v0e" secondAttribute="top" constant="20" id="muj-oo-B3I"/>
+                            <constraint firstItem="y73-vw-rLg" firstAttribute="bottom" secondItem="ejd-2X-v0e" secondAttribute="bottom" id="OkM-Tu-m9e"/>
+                            <constraint firstItem="ejd-2X-v0e" firstAttribute="trailing" secondItem="xDz-Xe-V0R" secondAttribute="trailing" constant="25" id="Pd8-hY-CnA"/>
+                            <constraint firstItem="y73-vw-rLg" firstAttribute="trailing" secondItem="xDz-Xe-V0R" secondAttribute="trailing" id="UaW-Im-2pg"/>
+                            <constraint firstItem="xDz-Xe-V0R" firstAttribute="top" secondItem="ZWQ-m1-Kid" secondAttribute="bottom" constant="25" id="jT9-Ny-uZS"/>
+                            <constraint firstItem="ZWQ-m1-Kid" firstAttribute="top" secondItem="ejd-2X-v0e" secondAttribute="top" constant="25" id="muj-oo-B3I"/>
+                            <constraint firstItem="xDz-Xe-V0R" firstAttribute="leading" secondItem="ejd-2X-v0e" secondAttribute="leading" constant="20" id="xNg-8O-nGO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Color Combination" id="vQ4-VI-obx" customClass="toColorCombinationSegue">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="yfT-r9-lvW"/>
-                            <barButtonItem title="Item" image="arrow.clockwise" catalog="system" id="7C3-k7-sk4"/>
+                            <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="yfT-r9-lvW">
+                                <color key="tintColor" name="Orange Jamet"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="arrow.clockwise" catalog="system" id="7C3-k7-sk4">
+                                <color key="tintColor" name="Orange Jamet"/>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -202,8 +259,14 @@
         <namedColor name="Dark Blue">
             <color red="0.13725490196078433" green="0.17254901960784313" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Dark Blue 70%">
+            <color red="0.13725490196078433" green="0.17254901960784313" blue="0.38039215686274508" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Light Blue">
             <color red="0.92941176470588238" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light Gray">
+            <color red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Orange Jamet">
             <color red="0.90196078431372551" green="0.44313725490196076" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
