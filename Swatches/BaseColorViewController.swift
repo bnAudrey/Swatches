@@ -11,8 +11,10 @@ class BaseColorViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
     var sentCategory:String?
     var colorCollection = [Colors]()
+    var sentColor:Colors?
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -60,6 +62,17 @@ extension BaseColorViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        sentColor = colorCollection[indexPath.section]
+        performSegue(withIdentifier: "toColorCombinationSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toColorCombinationSegue" {
+            let dest = segue.destination as! ColorCombinationViewController
+            dest.sentColor = sentColor
+        }
+    }
     
     
 }

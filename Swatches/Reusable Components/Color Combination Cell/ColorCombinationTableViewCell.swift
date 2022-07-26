@@ -9,6 +9,8 @@ import UIKit
 
 class ColorCombinationTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var hexValue: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

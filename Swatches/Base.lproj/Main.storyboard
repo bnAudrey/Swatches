@@ -96,7 +96,7 @@
                     <navigationItem key="navigationItem" title="Base Color" largeTitleDisplayMode="always" id="nTC-CO-2YP"/>
                     <connections>
                         <outlet property="tableView" destination="xj2-Zm-Esw" id="wcP-4D-Hpp"/>
-                        <segue destination="qE5-Bj-Oxv" kind="show" id="cgd-so-9zM"/>
+                        <segue destination="qE5-Bj-Oxv" kind="show" identifier="toColorCombinationSegue" id="cgd-so-9zM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1S-rz-rln" sceneMemberID="firstResponder"/>
@@ -106,7 +106,7 @@
         <!--Color Combination-->
         <scene sceneID="knY-9M-vqM">
             <objects>
-                <viewController id="qE5-Bj-Oxv" customClass="TestViewController" customModule="Swatches" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qE5-Bj-Oxv" customClass="ColorCombinationViewController" customModule="Swatches" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="shH-6g-hSa">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +194,7 @@
                                     <constraint firstItem="gOm-RP-f79" firstAttribute="top" secondItem="xDz-Xe-V0R" secondAttribute="top" constant="15" id="ri7-23-Km0"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y73-vw-rLg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="10" estimatedSectionHeaderHeight="-1" sectionFooterHeight="10" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y73-vw-rLg">
                                 <rect key="frame" x="20" y="415" width="345" height="395"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -218,14 +218,29 @@
                         <rightBarButtonItems>
                             <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="yfT-r9-lvW">
                                 <color key="tintColor" name="Orange Jamet"/>
+                                <connections>
+                                    <action selector="share:" destination="qE5-Bj-Oxv" id="xzi-ik-ciB"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem title="Item" image="arrow.clockwise" catalog="system" id="7C3-k7-sk4">
                                 <color key="tintColor" name="Orange Jamet"/>
+                                <connections>
+                                    <action selector="reloadAPI:" destination="qE5-Bj-Oxv" id="9Vq-9P-GRE"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="label" destination="gWW-0R-xjw" id="oI6-c5-Qe9"/>
+                        <outlet property="baseColorBox" destination="1bP-xE-k3e" id="LPe-bZ-dk8"/>
+                        <outlet property="baseColorCategory" destination="gWW-0R-xjw" id="ILy-pW-nJL"/>
+                        <outlet property="baseColorHexValue" destination="dRt-zF-F1T" id="psN-q4-af1"/>
+                        <outlet property="baseColorName" destination="mET-ua-3mY" id="wCp-Qk-xki"/>
+                        <outlet property="color1" destination="DdF-V9-mkd" id="C00-jP-YbE"/>
+                        <outlet property="color2" destination="dYG-p5-9HB" id="gTs-7m-lsD"/>
+                        <outlet property="color3" destination="uUp-yO-PxZ" id="CC5-Qm-yab"/>
+                        <outlet property="color4" destination="u6f-j7-Zpq" id="MfD-7i-Odi"/>
+                        <outlet property="color5" destination="nqb-8u-fJy" id="Mes-Yn-X0G"/>
+                        <outlet property="tableView" destination="y73-vw-rLg" id="P0y-JW-7Wt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jh8-IA-w9E" sceneMemberID="firstResponder"/>
