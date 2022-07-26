@@ -83,19 +83,27 @@ class ColorCombinationViewController: UIViewController {
     @IBAction func share(_ sender: Any) {
         
     }
+  
+    
+    
     
 }
 
 extension ColorCombinationViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "colorCombinationCell") as! ColorCombinationTableViewCell
-        cell.hexValue.text = "#LOREM"
         
         let color = colorCollection[indexPath.section]
         cell.backgroundColor = UIColor(displayP3Red: CGFloat(color[0])/255, green: CGFloat(color[1])/255, blue: CGFloat(color[2])/255, alpha: 1.0)
+                
+        let hex = "#\(color[0].decToHexString())\(color[1].decToHexString())\(color[2].decToHexString())"
+        cell.hexValue.text = hex
+    
         
         return cell
     }
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1

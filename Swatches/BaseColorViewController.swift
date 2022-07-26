@@ -30,7 +30,6 @@ class BaseColorViewController: UIViewController {
         let result = try! context.fetch(fetchRequest)
         colorCollection = result
         
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,6 +58,7 @@ extension BaseColorViewController: UITableViewDelegate, UITableViewDataSource {
         let blue = colorCollection[indexPath.section].blue / 255.0
         
         cell.colorBox.backgroundColor = UIColor(displayP3Red: red, green: green, blue: blue, alpha: 1.0)
+        
         return cell
     }
     
