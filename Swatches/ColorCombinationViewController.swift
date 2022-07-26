@@ -71,6 +71,42 @@ class ColorCombinationViewController: UIViewController {
             DispatchQueue.main.sync {
                 self.colorCollection = parent
                 self.tableView.reloadData()
+                
+                self.color1.backgroundColor = UIColor(
+                    displayP3Red: CGFloat(self.colorCollection[0][0])/255,
+                    green: CGFloat(self.colorCollection[0][1])/255,
+                    blue: CGFloat(self.colorCollection[0][2])/255,
+                    alpha: 1.0
+                )
+                
+                self.color2.backgroundColor = UIColor(
+                    displayP3Red: CGFloat(self.colorCollection[1][0])/255,
+                    green: CGFloat(self.colorCollection[1][1])/255,
+                    blue: CGFloat(self.colorCollection[1][2])/255,
+                    alpha: 1.0
+                )
+                
+                self.color3.backgroundColor = UIColor(
+                    displayP3Red: CGFloat(self.colorCollection[2][0])/255,
+                    green: CGFloat(self.colorCollection[2][1])/255,
+                    blue: CGFloat(self.colorCollection[2][2])/255,
+                    alpha: 1.0
+                )
+                
+                self.color4.backgroundColor = UIColor(
+                    displayP3Red: CGFloat(self.colorCollection[3][0])/255,
+                    green: CGFloat(self.colorCollection[3][1])/255,
+                    blue: CGFloat(self.colorCollection[3][2])/255,
+                    alpha: 1.0
+                )
+                
+                self.color5.backgroundColor = UIColor(
+                    displayP3Red: CGFloat(self.colorCollection[4][0])/255,
+                    green: CGFloat(self.colorCollection[4][1])/255,
+                    blue: CGFloat(self.colorCollection[4][2])/255,
+                    alpha: 1.0
+                )
+                
             }
             
         }.resume()
