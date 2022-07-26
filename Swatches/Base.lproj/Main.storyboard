@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kS8-xb-haY">
-                                <rect key="frame" x="20" y="140" width="350" height="670"/>
+                                <rect key="frame" x="20" y="170" width="350" height="640"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fFL-P4-8pE">
                                     <size key="itemSize" width="165" height="105"/>
@@ -35,7 +35,7 @@
                             <constraint firstItem="kS8-xb-haY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Kw-Yc-OTp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kS8-xb-haY" secondAttribute="bottom" id="AEZ-78-0No"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kS8-xb-haY" secondAttribute="trailing" constant="20" id="Whh-WL-mEv"/>
-                            <constraint firstItem="kS8-xb-haY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j15-8N-CFI"/>
+                            <constraint firstItem="kS8-xb-haY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="j15-8N-CFI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colornary" id="dPp-AQ-hWv"/>
@@ -79,34 +79,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dcH-ha-GcM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="10" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-Zm-Esw">
                                 <rect key="frame" x="0.0" y="140" width="390" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KG5-Fe-Dd6">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <tableView key="backgroundView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6iC-iZ-oFl">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                </tableView>
-                                <cells/>
-                            </collectionView>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vP5-4q-xVD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vP5-4q-xVD" firstAttribute="trailing" secondItem="dcH-ha-GcM" secondAttribute="trailing" id="6f1-Fb-gyp"/>
-                            <constraint firstItem="dcH-ha-GcM" firstAttribute="leading" secondItem="vP5-4q-xVD" secondAttribute="leading" id="Mhc-s2-7c2"/>
-                            <constraint firstItem="dcH-ha-GcM" firstAttribute="top" secondItem="vP5-4q-xVD" secondAttribute="top" id="bQ4-DT-hD2"/>
-                            <constraint firstItem="vP5-4q-xVD" firstAttribute="bottom" secondItem="dcH-ha-GcM" secondAttribute="bottom" id="gSK-Vk-hU1"/>
+                            <constraint firstItem="xj2-Zm-Esw" firstAttribute="top" secondItem="vP5-4q-xVD" secondAttribute="top" id="0rX-Iy-OVt"/>
+                            <constraint firstItem="vP5-4q-xVD" firstAttribute="bottom" secondItem="xj2-Zm-Esw" secondAttribute="bottom" id="Ddh-Pi-PS0"/>
+                            <constraint firstItem="xj2-Zm-Esw" firstAttribute="leading" secondItem="vP5-4q-xVD" secondAttribute="leading" id="UPg-TH-erQ"/>
+                            <constraint firstItem="vP5-4q-xVD" firstAttribute="trailing" secondItem="xj2-Zm-Esw" secondAttribute="trailing" id="hZg-kb-xkJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Base Color" id="nTC-CO-2YP"/>
+                    <navigationItem key="navigationItem" title="Base Color" largeTitleDisplayMode="always" id="nTC-CO-2YP"/>
                     <connections>
+                        <outlet property="tableView" destination="xj2-Zm-Esw" id="wcP-4D-Hpp"/>
                         <segue destination="qE5-Bj-Oxv" kind="show" id="cgd-so-9zM"/>
                     </connections>
                 </viewController>

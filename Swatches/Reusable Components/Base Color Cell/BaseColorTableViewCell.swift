@@ -9,9 +9,13 @@ import UIKit
 
 class BaseColorTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var colorBox: UIView!
+    @IBOutlet weak var colorName: UILabel!
+    @IBOutlet weak var hexValue: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        colorBox.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

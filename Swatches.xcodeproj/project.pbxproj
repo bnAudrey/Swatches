@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14088C3C288FE82B00E83F76 /* BaseColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14088C3B288FE82B00E83F76 /* BaseColorViewController.swift */; };
+		14088C3F288FE9BC00E83F76 /* Colors+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14088C3D288FE9BC00E83F76 /* Colors+CoreDataClass.swift */; };
+		14088C40288FE9BC00E83F76 /* Colors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14088C3E288FE9BC00E83F76 /* Colors+CoreDataProperties.swift */; };
 		144BAF89288BF54600D6FEDB /* BaseColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BAF87288BF54600D6FEDB /* BaseColorTableViewCell.swift */; };
 		144BAF8A288BF54600D6FEDB /* BaseColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144BAF88288BF54600D6FEDB /* BaseColorTableViewCell.xib */; };
 		144BAF8F288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BAF8D288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		14088C3B288FE82B00E83F76 /* BaseColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseColorViewController.swift; sourceTree = "<group>"; };
+		14088C3D288FE9BC00E83F76 /* Colors+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+CoreDataClass.swift"; sourceTree = "<group>"; };
+		14088C3E288FE9BC00E83F76 /* Colors+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		144BAF87288BF54600D6FEDB /* BaseColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseColorTableViewCell.swift; sourceTree = "<group>"; };
 		144BAF88288BF54600D6FEDB /* BaseColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseColorTableViewCell.xib; sourceTree = "<group>"; };
 		144BAF8D288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCombinationTableViewCell.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		14ACE3A6288AD8BA000CBBA5 = {
 			isa = PBXGroup;
 			children = (
+				14088C3D288FE9BC00E83F76 /* Colors+CoreDataClass.swift */,
+				14088C3E288FE9BC00E83F76 /* Colors+CoreDataProperties.swift */,
 				14ACE3B1288AD8BA000CBBA5 /* Swatches */,
 				14ACE3B0288AD8BA000CBBA5 /* Products */,
 			);
@@ -214,6 +220,7 @@
 				144BAF89288BF54600D6FEDB /* BaseColorTableViewCell.swift in Sources */,
 				14088C3C288FE82B00E83F76 /* BaseColorViewController.swift in Sources */,
 				14ACE3B7288AD8BA000CBBA5 /* HomeViewController.swift in Sources */,
+				14088C3F288FE9BC00E83F76 /* Colors+CoreDataClass.swift in Sources */,
 				14ACE3B3288AD8BA000CBBA5 /* AppDelegate.swift in Sources */,
 				144BAF94288EE0E000D6FEDB /* ColorSeeder.swift in Sources */,
 				144BAF8F288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift in Sources */,
@@ -221,6 +228,7 @@
 				14ACE3B5288AD8BA000CBBA5 /* SceneDelegate.swift in Sources */,
 				14ACE3BD288AD8BA000CBBA5 /* Swatches.xcdatamodeld in Sources */,
 				144BAF95288EE0E000D6FEDB /* Color.swift in Sources */,
+				14088C40288FE9BC00E83F76 /* Colors+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
