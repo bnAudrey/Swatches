@@ -7,10 +7,12 @@
 
 import Foundation
 
+
+
 class ColorSeeder {
     
     var colorArray = [
-    
+        
         Color(colorName:"White", colorTag:"Relaxing", hexValue:"#FFFFFF", red:255, green:255, blue:255),
         Color(colorName:"Champagne", colorTag:"Relaxing", hexValue:"#F9E8CE", red:249, green:232, blue:206),
         Color(colorName:"Maize", colorTag:"Relaxing", hexValue:"#F6DAAC", red:246, green:218, blue:172),
@@ -25,7 +27,7 @@ class ColorSeeder {
         Color(colorName:"Aqua Squeeze", colorTag:"Relaxing", hexValue:"#E6F4F1", red:230, green:244, blue:241),
         Color(colorName:"Oxford Blue", colorTag:"Relaxing", hexValue:"#354A54", red:53, green:74, blue:84),
         Color(colorName:"Bright Gray", colorTag:"Relaxing", hexValue:"#35364B", red:53, green:54, blue:75),
-
+        
         Color(colorName:"Gurkha", colorTag:"Vintage", hexValue:"#989176", red:152, green:145, blue:118),
         Color(colorName:"Chino", colorTag:"Vintage", hexValue:"#CFC6AA", red:207, green:198, blue:170),
         Color(colorName:"Ash", colorTag:"Vintage", hexValue:"#C8C3B4", red:200, green:195, blue:180),
@@ -40,7 +42,7 @@ class ColorSeeder {
         Color(colorName:"Ronchi", colorTag:"Vintage", hexValue:"#EACB48", red:234, green:203, blue:72),
         Color(colorName:"Sorrel Brown", colorTag:"Vintage", hexValue:"#CBB682", red:203, green:182, blue:130),
         Color(colorName:"Tango", colorTag:"Vintage", hexValue:"#E97E2E", red:233, green:126, blue:46),
-
+        
         Color(colorName:"Bermuda", colorTag:"Playfull", hexValue:"#77DAD5", red:119, green:218, blue:213),
         Color(colorName:"Bitter Lemon", colorTag:"Playfull", hexValue:"#DEDE0E", red:222, green:222, blue:14),
         Color(colorName:"Carnation", colorTag:"Playfull", hexValue:"#F95950", red:249, green:89, blue:80),
@@ -58,7 +60,7 @@ class ColorSeeder {
         Color(colorName:"Scooter", colorTag:"Playfull", hexValue:"#3EC1D3", red:62, green:193, blue:211),
         Color(colorName:"Snowy Mint", colorTag:"Playfull", hexValue:"#DDFEDD", red:221, green:254, blue:221),
         Color(colorName:"Tangerine", colorTag:"Playfull", hexValue:"#F58800", red:245, green:136, blue:0),
-
+        
         Color(colorName:"Alabaster", colorTag:"Adventurous", hexValue:"#F9F9F9", red:249, green:249, blue:249),
         Color(colorName:"Big Stone", colorTag:"Adventurous", hexValue:"#14343F", red:20, green:52, blue:63),
         Color(colorName:"Cadet Blue", colorTag:"Adventurous", hexValue:"#A0B3C1", red:160, green:179, blue:193),
@@ -74,7 +76,7 @@ class ColorSeeder {
         Color(colorName:"Red Damask", colorTag:"Adventurous", hexValue:"#D36D3D", red:211, green:109, blue:61),
         Color(colorName:"Tall Poppy", colorTag:"Adventurous", hexValue:"#B12C25", red:177, green:44, blue:37),
         Color(colorName:"Mandy", colorTag:"Adventurous", hexValue:"#E55151", red:229, green:81, blue:81),
-
+        
         Color(colorName:"Quill Gray", colorTag:"Modern", hexValue:"#F8F8F7", red:248, green:248, blue:247),
         Color(colorName:"Black Pearl", colorTag:"Modern", hexValue:"#051821", red:5, green:24, blue:33),
         Color(colorName:"Natural Grey", colorTag:"Modern", hexValue:"#898886", red:137, green:136, blue:134),
@@ -88,7 +90,7 @@ class ColorSeeder {
         Color(colorName:"Nandor", colorTag:"Modern", hexValue:"#484E4A", red:72, green:78, blue:74),
         Color(colorName:"Ronchi", colorTag:"Modern", hexValue:"#EACB48", red:234, green:203, blue:72),
         Color(colorName:"Ecstasy", colorTag:"Modern", hexValue:"#F58810", red:245, green:136, blue:16),
-
+        
         Color(colorName:"Atlantis", colorTag:"Nature", hexValue:"#A2C523", red:162, green:197, blue:35),
         Color(colorName:"Bali Hai", colorTag:"Nature", hexValue:"#839AAB", red:131, green:154, blue:171),
         Color(colorName:"Big Stone", colorTag:"Nature", hexValue:"#14343F", red:20, green:52, blue:63),
@@ -105,7 +107,7 @@ class ColorSeeder {
         Color(colorName:"Sushi", colorTag:"Nature", hexValue:"#9CB446", red:156, green:180, blue:70),
         Color(colorName:"Taupe", colorTag:"Nature", hexValue:"#3D3B2C", red:61, green:59, blue:44),
         Color(colorName:"Verdun Green", colorTag:"Nature", hexValue:"#486B00", red:72, green:107, blue:0),
-
+        
         Color(colorName:"Aero Blue", colorTag:"Fresh", hexValue:"#B6FCDB", red:182, green:252, blue:219),
         Color(colorName:"Apricot Peach", colorTag:"Fresh", hexValue:"#FBC2B2", red:251, green:194, blue:178),
         Color(colorName:"Bright Turquoise", colorTag:"Fresh", hexValue:"#3BE3F7", red:59, green:227, blue:247),
@@ -115,7 +117,7 @@ class ColorSeeder {
         Color(colorName:"Mint Green", colorTag:"Fresh", hexValue:"#A4F9A4", red:164, green:249, blue:164),
         Color(colorName:"Texas", colorTag:"Fresh", hexValue:"#F8F2A5", red:248, green:242, blue:165),
         Color(colorName:"Rose", colorTag:"Fresh", hexValue:"#FAAFA8", red:250, green:175, blue:168),
-
+        
         Color(colorName:"Anzac", colorTag:"Elegant", hexValue:"#DE9E48", red:222, green:158, blue:72),
         Color(colorName:"Cameo", colorTag:"Elegant", hexValue:"#DDB7AB", red:221, green:183, blue:171),
         Color(colorName:"Double Spanish White", colorTag:"Elegant", hexValue:"#E9DBBD", red:233, green:219, blue:189),

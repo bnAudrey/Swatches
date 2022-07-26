@@ -8,10 +8,16 @@
 import UIKit
 
 class SwatchCategoryCollectionViewCell: UICollectionViewCell {
-
+    
+    @IBOutlet weak var categoryImage: UIImageView!
+    @IBOutlet weak var categoryLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.layer.cornerRadius = 10
+        // TODO: Create Drop Shadow on collection view cell
+        
     }
-
+    
 }

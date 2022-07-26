@@ -15,7 +15,7 @@
 		144BAF95288EE0E000D6FEDB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BAF93288EE0E000D6FEDB /* Color.swift */; };
 		14ACE3B3288AD8BA000CBBA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3B2288AD8BA000CBBA5 /* AppDelegate.swift */; };
 		14ACE3B5288AD8BA000CBBA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3B4288AD8BA000CBBA5 /* SceneDelegate.swift */; };
-		14ACE3B7288AD8BA000CBBA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3B6288AD8BA000CBBA5 /* ViewController.swift */; };
+		14ACE3B7288AD8BA000CBBA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3B6288AD8BA000CBBA5 /* HomeViewController.swift */; };
 		14ACE3BA288AD8BA000CBBA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14ACE3B8288AD8BA000CBBA5 /* Main.storyboard */; };
 		14ACE3BD288AD8BA000CBBA5 /* Swatches.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14ACE3BB288AD8BA000CBBA5 /* Swatches.xcdatamodeld */; };
 		14ACE3BF288AD8BB000CBBA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ACE3BE288AD8BB000CBBA5 /* Assets.xcassets */; };
@@ -34,7 +34,7 @@
 		14ACE3AF288AD8BA000CBBA5 /* Swatches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swatches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14ACE3B2288AD8BA000CBBA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14ACE3B4288AD8BA000CBBA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14ACE3B6288AD8BA000CBBA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14ACE3B6288AD8BA000CBBA5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14ACE3B9288AD8BA000CBBA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14ACE3BC288AD8BA000CBBA5 /* Swatches.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swatches.xcdatamodel; sourceTree = "<group>"; };
 		14ACE3BE288AD8BB000CBBA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +64,43 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		14924C34288FD72200D6C22B /* Reusable Components */ = {
+			isa = PBXGroup;
+			children = (
+				14924C37288FD75B00D6C22B /* Base Color Cell */,
+				14924C36288FD74100D6C22B /* Color Combination Cell */,
+				14924C35288FD73400D6C22B /* Swatch Category Cell */,
+			);
+			path = "Reusable Components";
+			sourceTree = "<group>";
+		};
+		14924C35288FD73400D6C22B /* Swatch Category Cell */ = {
+			isa = PBXGroup;
+			children = (
+				14ACE3C9288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.swift */,
+				14ACE3CA288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.xib */,
+			);
+			path = "Swatch Category Cell";
+			sourceTree = "<group>";
+		};
+		14924C36288FD74100D6C22B /* Color Combination Cell */ = {
+			isa = PBXGroup;
+			children = (
+				144BAF8D288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift */,
+				144BAF8E288EDF9500D6FEDB /* ColorCombinationTableViewCell.xib */,
+			);
+			path = "Color Combination Cell";
+			sourceTree = "<group>";
+		};
+		14924C37288FD75B00D6C22B /* Base Color Cell */ = {
+			isa = PBXGroup;
+			children = (
+				144BAF87288BF54600D6FEDB /* BaseColorTableViewCell.swift */,
+				144BAF88288BF54600D6FEDB /* BaseColorTableViewCell.xib */,
+			);
+			path = "Base Color Cell";
+			sourceTree = "<group>";
+		};
 		14ACE3A6288AD8BA000CBBA5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,17 +120,12 @@
 		14ACE3B1288AD8BA000CBBA5 /* Swatches */ = {
 			isa = PBXGroup;
 			children = (
+				14924C34288FD72200D6C22B /* Reusable Components */,
 				144BAF91288EE0C900D6FEDB /* Model */,
-				144BAF87288BF54600D6FEDB /* BaseColorTableViewCell.swift */,
-				144BAF88288BF54600D6FEDB /* BaseColorTableViewCell.xib */,
-				144BAF8D288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift */,
-				144BAF8E288EDF9500D6FEDB /* ColorCombinationTableViewCell.xib */,
 				14ACE3B2288AD8BA000CBBA5 /* AppDelegate.swift */,
 				14ACE3B4288AD8BA000CBBA5 /* SceneDelegate.swift */,
-				14ACE3B6288AD8BA000CBBA5 /* ViewController.swift */,
+				14ACE3B6288AD8BA000CBBA5 /* HomeViewController.swift */,
 				14ACE3B8288AD8BA000CBBA5 /* Main.storyboard */,
-				14ACE3C9288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.swift */,
-				14ACE3CA288ADBEA000CBBA5 /* SwatchCategoryCollectionViewCell.xib */,
 				14ACE3BE288AD8BB000CBBA5 /* Assets.xcassets */,
 				14ACE3C0288AD8BB000CBBA5 /* LaunchScreen.storyboard */,
 				14ACE3C3288AD8BB000CBBA5 /* Info.plist */,
@@ -177,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				144BAF89288BF54600D6FEDB /* BaseColorTableViewCell.swift in Sources */,
-				14ACE3B7288AD8BA000CBBA5 /* ViewController.swift in Sources */,
+				14ACE3B7288AD8BA000CBBA5 /* HomeViewController.swift in Sources */,
 				14ACE3B3288AD8BA000CBBA5 /* AppDelegate.swift in Sources */,
 				144BAF94288EE0E000D6FEDB /* ColorSeeder.swift in Sources */,
 				144BAF8F288EDF9500D6FEDB /* ColorCombinationTableViewCell.swift in Sources */,
@@ -334,6 +366,7 @@
 				DEVELOPMENT_TEAM = 5CDJ7K2756;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Swatches/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Colornary;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -362,6 +395,7 @@
 				DEVELOPMENT_TEAM = 5CDJ7K2756;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Swatches/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Colornary;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
