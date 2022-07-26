@@ -22,7 +22,6 @@ class BaseColorViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "BaseColorTableViewCell", bundle: nil), forCellReuseIdentifier: "baseColorCell")
-//        tableView.register(UINib(nibName: "BaseColorTableViewCell", bundle: nil), forCellWithReuseIdentifier: "baseColorCell")
 
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = Colors.fetchBasedOnCategory(category: sentCategory!)
