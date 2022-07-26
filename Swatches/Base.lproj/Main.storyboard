@@ -41,7 +41,7 @@
                     <navigationItem key="navigationItem" title="Colornary" id="dPp-AQ-hWv"/>
                     <connections>
                         <outlet property="collectionView" destination="kS8-xb-haY" id="QHu-er-Mdw"/>
-                        <segue destination="QJp-57-zqx" kind="show" identifier="toBaseColorSegue" id="V9h-bL-6XC"/>
+                        <segue destination="QJp-57-zqx" kind="show" identifier="toBaseColorSegue" id="JmX-GD-0jP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -74,7 +74,7 @@
         <!--Base Color-->
         <scene sceneID="xON-tu-jOP">
             <objects>
-                <viewController id="QJp-57-zqx" customClass="HomeViewController" customModule="Swatches" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QJp-57-zqx" customClass="BaseColorViewController" customModule="Swatches" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3SP-RT-1aa">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

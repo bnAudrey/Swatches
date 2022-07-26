@@ -11,7 +11,7 @@ import Foundation
 
 class ColorSeeder {
     
-    var colorArray = [
+    static var colorArray = [
         
         Color(colorName:"White", colorTag:"Relaxing", hexValue:"#FFFFFF", red:255, green:255, blue:255),
         Color(colorName:"Champagne", colorTag:"Relaxing", hexValue:"#F9E8CE", red:249, green:232, blue:206),
