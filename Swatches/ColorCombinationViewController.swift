@@ -117,11 +117,12 @@ class ColorCombinationViewController: UIViewController {
     }
 
     @IBAction func share(_ sender: Any) {
+        let textConcat = "\(sentColor?.colorName) \(sentColor?.hexValue)"
         
+        let shareModal = UIActivityViewController(activityItems: [textConcat], applicationActivities: nil)
+        shareModal.popoverPresentationController?.sourceView = self.view
+        present(shareModal, animated: true)
     }
-  
-    
-    
     
 }
 
