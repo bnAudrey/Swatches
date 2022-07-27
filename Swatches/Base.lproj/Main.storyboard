@@ -57,7 +57,7 @@
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.90196078430000004" green="0.4431372549" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
+                        <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" name="Dark Blue"/>
                         </textAttributes>
                         <navigationBarAppearance key="compactScrollEdgeAppearance"/>
@@ -194,8 +194,8 @@
                                     <constraint firstItem="gOm-RP-f79" firstAttribute="top" secondItem="xDz-Xe-V0R" secondAttribute="top" constant="15" id="ri7-23-Km0"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="10" estimatedSectionHeaderHeight="-1" sectionFooterHeight="10" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y73-vw-rLg">
-                                <rect key="frame" x="20" y="415" width="345" height="395"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="66" estimatedRowHeight="-1" sectionHeaderHeight="5" estimatedSectionHeaderHeight="-1" sectionFooterHeight="5" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y73-vw-rLg">
+                                <rect key="frame" x="0.0" y="394" width="390" height="416"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -203,12 +203,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZWQ-m1-Kid" firstAttribute="leading" secondItem="ejd-2X-v0e" secondAttribute="leading" constant="20" id="BME-NY-Nmx"/>
-                            <constraint firstItem="y73-vw-rLg" firstAttribute="top" secondItem="xDz-Xe-V0R" secondAttribute="bottom" constant="25" id="CLA-OK-aI7"/>
-                            <constraint firstItem="y73-vw-rLg" firstAttribute="leading" secondItem="xDz-Xe-V0R" secondAttribute="leading" id="CXA-X7-BcX"/>
+                            <constraint firstItem="y73-vw-rLg" firstAttribute="top" secondItem="shH-6g-hSa" secondAttribute="bottom" constant="-450" id="CLA-OK-aI7"/>
+                            <constraint firstItem="y73-vw-rLg" firstAttribute="leading" secondItem="shH-6g-hSa" secondAttribute="leading" id="CXA-X7-BcX"/>
                             <constraint firstItem="ejd-2X-v0e" firstAttribute="trailing" secondItem="ZWQ-m1-Kid" secondAttribute="trailing" constant="20" id="Eo4-a7-2pq"/>
                             <constraint firstItem="y73-vw-rLg" firstAttribute="bottom" secondItem="ejd-2X-v0e" secondAttribute="bottom" id="OkM-Tu-m9e"/>
                             <constraint firstItem="ejd-2X-v0e" firstAttribute="trailing" secondItem="xDz-Xe-V0R" secondAttribute="trailing" constant="25" id="Pd8-hY-CnA"/>
-                            <constraint firstItem="y73-vw-rLg" firstAttribute="trailing" secondItem="xDz-Xe-V0R" secondAttribute="trailing" id="UaW-Im-2pg"/>
+                            <constraint firstItem="y73-vw-rLg" firstAttribute="trailing" secondItem="shH-6g-hSa" secondAttribute="trailing" id="UaW-Im-2pg"/>
                             <constraint firstItem="xDz-Xe-V0R" firstAttribute="top" secondItem="ZWQ-m1-Kid" secondAttribute="bottom" constant="25" id="jT9-Ny-uZS"/>
                             <constraint firstItem="ZWQ-m1-Kid" firstAttribute="top" secondItem="ejd-2X-v0e" secondAttribute="top" constant="25" id="muj-oo-B3I"/>
                             <constraint firstItem="xDz-Xe-V0R" firstAttribute="leading" secondItem="ejd-2X-v0e" secondAttribute="leading" constant="20" id="xNg-8O-nGO"/>
@@ -240,6 +240,8 @@
                         <outlet property="color3" destination="uUp-yO-PxZ" id="CC5-Qm-yab"/>
                         <outlet property="color4" destination="u6f-j7-Zpq" id="MfD-7i-Odi"/>
                         <outlet property="color5" destination="nqb-8u-fJy" id="Mes-Yn-X0G"/>
+                        <outlet property="mainBackgroundBox" destination="ZWQ-m1-Kid" id="frf-wo-b7O"/>
+                        <outlet property="secondBackgroundBox" destination="xDz-Xe-V0R" id="QNx-bS-6T6"/>
                         <outlet property="tableView" destination="y73-vw-rLg" id="P0y-JW-7Wt"/>
                     </connections>
                 </viewController>

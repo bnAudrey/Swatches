@@ -9,10 +9,12 @@ import UIKit
 
 class ColorCombinationTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var blackBoxCell: UIView!
     @IBOutlet weak var hexValue: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        blackBoxCell.layer.cornerRadius = 8
         // Initialization code
     }
 

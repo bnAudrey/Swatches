@@ -17,12 +17,14 @@ class ColorCombinationViewController: UIViewController {
     var blue:Double?
 
     // Color Box
+    @IBOutlet weak var mainBackgroundBox: UIView!
     @IBOutlet weak var baseColorBox: UIView!
     @IBOutlet weak var baseColorHexValue: UILabel!
     @IBOutlet weak var baseColorName: UILabel!
     @IBOutlet weak var baseColorCategory: UILabel!
     
     // Color Palette
+    @IBOutlet weak var secondBackgroundBox: UIView!
     @IBOutlet weak var color1: UIView!
     @IBOutlet weak var color2: UIView!
     @IBOutlet weak var color3: UIView!
@@ -34,6 +36,17 @@ class ColorCombinationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        secondBackgroundBox.layer.cornerRadius = 10
+        mainBackgroundBox.layer.cornerRadius = 10
+        baseColorBox.layer.cornerRadius = 10
+        
+        color1.layer.cornerRadius = 10
+        color1.clipsToBounds = true
+        color1.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        
+        color5.layer.cornerRadius = 10
+        color5.clipsToBounds = true
+        color5.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
         
         red = sentColor?.red
         green = sentColor?.green
@@ -46,7 +59,8 @@ class ColorCombinationViewController: UIViewController {
         baseColorBox.backgroundColor = UIColor(displayP3Red: red!/255.0, green: green!/255.0, blue: blue!/255.0, alpha: 1.0)
         baseColorHexValue.text = sentColor?.hexValue
         baseColorName.text = sentColor?.colorName
-        baseColorCategory.text = sentColor?.category
+        baseColorCategory.text = "  \(sentColor!.category!)  "
+        baseColorCategory.layer.cornerRadius = 100
         
         fetchAPI()
         // TODO: Load content view

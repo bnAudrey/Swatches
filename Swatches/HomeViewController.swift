@@ -39,6 +39,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "SwatchCategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "categoryCell")
