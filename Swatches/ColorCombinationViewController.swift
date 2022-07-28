@@ -94,6 +94,7 @@ class ColorCombinationViewController: UIViewController {
                     alpha: 1.0
                 )
                 
+                
                 self.color2.backgroundColor = UIColor(
                     displayP3Red: CGFloat(self.colorCollection[1][0])/255,
                     green: CGFloat(self.colorCollection[1][1])/255,
@@ -132,14 +133,20 @@ class ColorCombinationViewController: UIViewController {
     }
 
     @IBAction func share(_ sender: Any) {
-        let textConcat = "\(sentColor?.colorName) \(sentColor?.hexValue)"
+        
+        let color1 = "#\(colorCollection[0][0].decToHexString())\(colorCollection[0][1].decToHexString())\(colorCollection[0][2].decToHexString())"
+        let color2 = "#\(colorCollection[1][0].decToHexString())\(colorCollection[1][1].decToHexString())\(colorCollection[1][2].decToHexString())"
+        let color3 = "#\(colorCollection[2][0].decToHexString())\(colorCollection[2][1].decToHexString())\(colorCollection[2][2].decToHexString())"
+        let color4 = "#\(colorCollection[3][0].decToHexString())\(colorCollection[3][1].decToHexString())\(colorCollection[3][2].decToHexString())"
+        let color5 = "#\(colorCollection[4][0].decToHexString())\(colorCollection[4][1].decToHexString())\(colorCollection[4][2].decToHexString())"
+        
+        let textConcat = "\(sentColor!.colorName!) \(sentColor!.hexValue!) \n \(color1) \n \(color2) \n \(color3) \n \(color4) \n \(color5)"
         
         let shareModal = UIActivityViewController(activityItems: [textConcat], applicationActivities: nil)
         shareModal.popoverPresentationController?.sourceView = self.view
         present(shareModal, animated: true)
     }
-    
-    
+
 }
 
 extension ColorCombinationViewController: UITableViewDelegate, UITableViewDataSource {
