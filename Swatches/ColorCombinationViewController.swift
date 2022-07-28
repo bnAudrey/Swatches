@@ -60,7 +60,8 @@ class ColorCombinationViewController: UIViewController {
         baseColorHexValue.text = sentColor?.hexValue
         baseColorName.text = sentColor?.colorName
         baseColorCategory.text = "  \(sentColor!.category!)  "
-        baseColorCategory.layer.cornerRadius = 100
+        baseColorCategory.layer.cornerRadius = 5
+        baseColorCategory.clipsToBounds = true
         
         fetchAPI()
         // TODO: Load content view
@@ -138,6 +139,7 @@ class ColorCombinationViewController: UIViewController {
         present(shareModal, animated: true)
     }
     
+    
 }
 
 extension ColorCombinationViewController: UITableViewDelegate, UITableViewDataSource {
@@ -162,5 +164,25 @@ extension ColorCombinationViewController: UITableViewDelegate, UITableViewDataSo
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return colorCollection.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let color = colorCollection[indexPath.section]
+        let hex = "#\(color[0].decToHexString())\(color[1].decToHexString())\(color[2].decToHexString())"
+        UIPasteboard.general.string = hex
+        showToast(message: "HEX Code Copied", seconds: 1)
+    }
+    
+    func showToast(message: String, seconds: Double) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.view.backgroundColor = UIColor.black
+        alert.view.alpha = 0.6
+        alert.view.layer.cornerRadius = 15
+        present(alert, animated: true)
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds) {
+            alert.dismiss(animated: true)
+        }
     }
 }
